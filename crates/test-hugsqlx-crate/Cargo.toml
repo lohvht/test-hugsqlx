@@ -1,0 +1,12 @@
+[package]
+name = "test-hugsqlx-crate"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.68"
+hugsqlx = { version = "0.1.4", features = ["mysql"] } # path = "../../../hugsqlx", 
+sqlx = { version = "0.6.3", features = ["runtime-tokio-rustls","mysql"] }
+tokio = { version = "1.26.0", features = ["full", "tracing"] }
